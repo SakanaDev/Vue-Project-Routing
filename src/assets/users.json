@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "name": "Evan You (尤雨溪)",
+      "role": "Creator of Vue.js",
+      "location": "Working remotely",
+      "image": "https://images.ctfassets.net/s5uo95nf6njh/5PpFIeuDxz2T89nZNED1EP/48d62a69f31a3ab6dfc58938eb7b8c2a/evan-you-portrait.jpg?w=1200&fm=jpg",
+      "bio": "Evan You is a software developer best known as the creator of Vue.js, a progressive JavaScript framework. Former Google engineer who worked on AngularJS before developing Vue in 2014.",
+      "education": "Studied Art & Design at Colgate University before transitioning to software development.",
+      "posts": [
+        {
+          "title": "Vue 3.0 Released",
+          "date": "September 18, 2020",
+          "content": "The new version of Vue.js comes with the Composition API, better TypeScript support, and improved performance."
+        },
+        {
+          "title": "Introducing Vite",
+          "date": "April 20, 2020",
+          "content": "Vite is a new frontend build tool that significantly improves the development experience for modern web projects."
+        }
+      ],
+      "contact": {
+        "twitter": "https://twitter.com/youyuxi",
+        "github": "https://github.com/yyx990803",
+        "website": "https://evanyou.me/",
+        "email": "contact@evanyou.me"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Ben Hong",
+      "role": "Vue.js Core Team Member",
+      "location": "San Francisco, CA",
+      "image": "https://pbs.twimg.com/profile_images/1305674805757333504/-4nFHMCK_400x400.jpg",
+      "bio": "Ben Hong is a Vue.js core team member and senior frontend engineer passionate about developer experience and open source education.",
+      "education": "Computer Science degree from University of California, Berkeley",
+      "posts": [
+        {
+          "title": "Vue 3 Composition API Best Practices",
+          "date": "March 15, 2022",
+          "content": "Exploring patterns and anti-patterns when using the Composition API in Vue 3 applications."
+        },
+        {
+          "title": "Demystifying Vue's Reactivity System",
+          "date": "November 5, 2021",
+          "content": "A deep dive into how Vue's reactivity system works under the hood."
+        },
+        {
+          "title": "Getting Started with Vue Testing",
+          "date": "July 22, 2021",
+          "content": "Practical guide to testing Vue components with Jest and Testing Library."
+        }
+      ],
+      "contact": {
+        "twitter": "https://twitter.com/bencodezen",
+        "github": "https://github.com/bencodezen",
+        "website": "https://bencodezen.io/",
+        "email": "ben@bencodezen.io",
+        "youtube": "https://youtube.com/bencodezen"
+      }
+    }
+  ]

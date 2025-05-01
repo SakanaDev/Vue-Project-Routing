@@ -2,6 +2,7 @@
 import Weather from "./components/Weather.vue";
 import Map from "./components/Map.vue";
 import About from './components/About.vue';
+import Users from './components/Users.vue';
 
 export default {
   data() {
@@ -9,12 +10,14 @@ export default {
       showWeather: true,  // Default to show weather
       showMap: false,     // Initially hide the map
       showAbout: false,   // Initially hide the about
+      showUsers: false,
     };
   },
   components: {
     Weather,
     Map,
     About,
+    Users,
   },
   methods: {
     // Method to toggle between weather and map
@@ -23,14 +26,22 @@ export default {
         this.showWeather = true;
         this.showMap = false;
         this.showAbout = false;
+        this.showUsers = false;
       } else if (view === 'map') {
         this.showWeather = false;
         this.showMap = true;
         this.showAbout = false;
+        this.showUsers = false;
       } else if (view === 'about') {
         this.showWeather = false;
         this.showMap = false;
         this.showAbout = true;
+        this.showUsers = false;
+      } else if (view === 'users') {
+        this.showWeather = false;
+        this.showMap = false;
+        this.showAbout = false;
+        this.showUsers = true;
       }
     },
   },
@@ -44,13 +55,14 @@ export default {
       <button @click="toggleView('weather')">Tiempo</button>
       <button @click="toggleView('map')">Mapa</button>
       <button @click="toggleView('about')">About</button>
+      <button @click="toggleView('users')">Equipo</button>
     </div>
   </header>
   <div>
-    <!-- Conditionally render Weather or Map component -->
     <Weather v-if="showWeather"></Weather>
     <Map v-if="showMap"></Map>
     <About v-if="showAbout"></About>
+    <Users v-if="showUsers"></Users>
   </div>
 </template>
 
