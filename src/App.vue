@@ -7,9 +7,9 @@ import Users from './components/Users.vue';
 export default {
   data() {
     return {
-      showWeather: true,  // Default to show weather
-      showMap: false,     // Initially hide the map
-      showAbout: false,   // Initially hide the about
+      showWeather: true,
+      showMap: false,
+      showAbout: false,
       showUsers: false,
     };
   },
@@ -20,7 +20,6 @@ export default {
     Users,
   },
   methods: {
-    // Method to toggle between weather and map
     toggleView(view) {
       if (view === 'weather') {
         this.showWeather = true;
