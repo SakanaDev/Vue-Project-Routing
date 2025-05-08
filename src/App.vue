@@ -2,7 +2,6 @@
 import Weather from "./components/Weather.vue";
 import Map from "./components/Map.vue";
 import About from './components/About.vue';
-import Users from './components/Users.vue';
 
 export default {
   data() {
@@ -17,7 +16,6 @@ export default {
     Weather,
     Map,
     About,
-    Users,
   },
   methods: {
     toggleView(view) {
@@ -36,11 +34,6 @@ export default {
         this.showMap = false;
         this.showAbout = true;
         this.showUsers = false;
-      } else if (view === 'users') {
-        this.showWeather = false;
-        this.showMap = false;
-        this.showAbout = false;
-        this.showUsers = true;
       }
     },
   },
@@ -54,14 +47,12 @@ export default {
       <button @click="toggleView('weather')">Tiempo</button>
       <button @click="toggleView('map')">Mapa</button>
       <button @click="toggleView('about')">About</button>
-      <button @click="toggleView('users')">Equipo</button>
     </div>
   </header>
   <div>
     <Weather v-if="showWeather"></Weather>
     <Map v-if="showMap"></Map>
     <About v-if="showAbout"></About>
-    <Users v-if="showUsers"></Users>
   </div>
 </template>
 
