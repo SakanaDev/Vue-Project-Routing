@@ -1,16 +1,16 @@
-# vue-project-routing
+# Vue Router
 
-This template should help get you started developing with Vue 3 in Vite.
+## What is Vue Router?
+[Vue Router](https://router.vuejs.org/installation.html) is the official router for Vue.js and allow us to manage the user navigation without reloading the page.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Key Concepts
+- **Router Instance**: The central object that manages all routing.
+- **Routes**: Define the path-URL to component mapping.
+- **RouterView**: A component that renders the matched component for the given path.
+- **RouterLink**: A component for user naviagation (replaces `<a>` tags).
 
 ## Project Setup
+Once this repository is cloned, inside the project folder, run:
 
 ```sh
 npm install

@@ -1,7 +1,5 @@
 <script>
-import { RouterLink, RouterView } from 'vue-router';
-
-/* import Weather from "./components/Weather.vue";
+import Weather from "./components/Weather.vue";
 import Map from "./components/Map.vue";
 import About from './components/About.vue';
 
@@ -39,26 +37,22 @@ export default {
       }
     },
   },
-}; */
+};
 </script>
 
 <template>
   <header>
     <h1>Latamergence</h1>
     <div class="menu">
-      <!-- <button @click="toggleView('weather')">Tiempo</button>
+      <button @click="toggleView('weather')">Tiempo</button>
       <button @click="toggleView('map')">Mapa</button>
-      <button @click="toggleView('about')">About</button> -->
-      <RouterLink to="/weather">Weather</RouterLink>
-      <RouterLink to="/map">Map</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
+      <button @click="toggleView('about')">About</button>
     </div>
   </header>
   <div>
-    <!-- <Weather v-if="showWeather"></Weather>
+    <Weather v-if="showWeather"></Weather>
     <Map v-if="showMap"></Map>
-    <About v-if="showAbout"></About> -->
-    <RouterView></RouterView>
+    <About v-if="showAbout"></About>
   </div>
 </template>
 
