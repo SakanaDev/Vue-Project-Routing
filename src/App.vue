@@ -9,7 +9,6 @@ export default {
       showWeather: true,
       showMap: false,
       showAbout: false,
-      showUsers: false,
     };
   },
   components: {
@@ -23,17 +22,14 @@ export default {
         this.showWeather = true;
         this.showMap = false;
         this.showAbout = false;
-        this.showUsers = false;
       } else if (view === 'map') {
         this.showWeather = false;
         this.showMap = true;
         this.showAbout = false;
-        this.showUsers = false;
       } else if (view === 'about') {
         this.showWeather = false;
         this.showMap = false;
         this.showAbout = true;
-        this.showUsers = false;
       }
     },
   },
