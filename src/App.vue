@@ -1,5 +1,7 @@
 <script>
-import Weather from "./components/Weather.vue";
+import { RouterLink, RouterView } from 'vue-router';
+
+/* import Weather from "./components/Weather.vue";
 import Map from "./components/Map.vue";
 import About from './components/About.vue';
 
@@ -9,7 +11,6 @@ export default {
       showWeather: true,
       showMap: false,
       showAbout: false,
-      showUsers: false,
     };
   },
   components: {
@@ -23,36 +24,37 @@ export default {
         this.showWeather = true;
         this.showMap = false;
         this.showAbout = false;
-        this.showUsers = false;
       } else if (view === 'map') {
         this.showWeather = false;
         this.showMap = true;
         this.showAbout = false;
-        this.showUsers = false;
       } else if (view === 'about') {
         this.showWeather = false;
         this.showMap = false;
         this.showAbout = true;
-        this.showUsers = false;
       }
     },
   },
-};
+}; */
 </script>
 
 <template>
   <header>
     <h1>Latamergence</h1>
     <div class="menu">
-      <button @click="toggleView('weather')">Tiempo</button>
+      <!-- <button @click="toggleView('weather')">Tiempo</button>
       <button @click="toggleView('map')">Mapa</button>
-      <button @click="toggleView('about')">About</button>
+      <button @click="toggleView('about')">About</button> -->
+      <RouterLink to="/weather" class="link">Tiempo</RouterLink>
+      <RouterLink to="/map" class="link">Mapa</RouterLink>
+      <RouterLink to="/about" class="link">About</RouterLink>
     </div>
   </header>
   <div>
-    <Weather v-if="showWeather"></Weather>
+    <!-- <Weather v-if="showWeather"></Weather>
     <Map v-if="showMap"></Map>
-    <About v-if="showAbout"></About>
+    <About v-if="showAbout"></About> -->
+    <RouterView></RouterView>
   </div>
 </template>
 
@@ -107,6 +109,7 @@ export default {
     font-size: large;
     font-weight: 500;
     border-radius: 1em;
+    text-decoration: none;
   }
 
   header .link:hover {
